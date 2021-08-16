@@ -186,7 +186,6 @@ footer {
 #links .icon {
   display: flex;
 }
-
 #links .icon a {
   display: flex;
   border-radius: 50%;
@@ -202,4 +201,67 @@ footer {
 #copyright {
   text-align: right;
   margin-right: 35px;
+}
+@media screen and (max-width:900px){
+ #top_section{
+  flex-direction: column;
+  width:80vw;
+ }
+ #logo1 {
+  transform: scale(0.6);
+}
+header > button{
+  transform:scale(0.9);
+}
+#intro h1, #intro p{
+  text-align: center;
+}
+#intro button{
+  margin:auto;
+}
+#mockup_img{
+  transform:scale(0.99);
+}
+.mini_section{
+flex-direction: column-reverse;
+width:60vw;
+height:30%;
+margin:auto;
+margin-bottom: 4rem;
+padding: 3rem;
+}
+.mid_img{
+  transform:scale(0.75);
+}
+.mid_word{
+  width:90%;
+  text-align: center;
+}
+#flowing_conversations{
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+#floating_section{
+  width:90vw;
+}
+#main_footer{
+  flex-direction: column;
+  height: 100%;
+}
+#more_info{
+  width:90%;
+}
+
+#further_reads{
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+#links .icon {
+  outline:Auto;
+  align-self: baseline;
+} 
+
+
 }
