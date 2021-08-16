@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  height: 50vh;
+  margin: 10%;
+  width: 80vw;
+  align-items: space-between;
+  grid-auto-flow: column;
+}
+
+.section {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Lexend Deca", sans-serif;
+}
+img {
+  height: 50px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+#sedan {
+  border-radius: 9px 0 0 9px;
+  background-color: hsl(31, 77%, 52%);
+}
+#suv {
+  background-color: hsl(184, 100%, 22%);
+}
+#lux {
+  border-radius: 0 9px 9px 0;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.headings {
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-family: "Big Shoulders Display", cursive;
+}
+button {
+  width: 70%;
+  padding: 10px;
+  height: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 30px;
+  border: none;
+  font-size: larger;
+  margin-top: 30px;
+  background-color: hsla(0, 0%, 100%, 0.75);
+}
+#bn1 {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+}
+#bn2 {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+}
+#bn3 {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+}
+p {
+  line-height: 1.8;
+  font-size: larger;
+}
+@media screen and (max-width: 800px) {
+  
+  .container {
+    width: 70vw;
+    grid-auto-flow: row;
+  }
+  #sedan {
+    border-radius: 9px 9px 0px 0;
+    
+  }
+  #lux {
+    border-radius: 0 0 9px 9px;
+  }
+  
+}

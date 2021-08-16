@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <base href="https://mybeautifulwebiste.com" target="_blank" />
+    <title>Humphreys's Site</title>
+    <style>
+        body {
+            background-color: tan;
+            color: black;
+        }
+
+        /* On screens that are 992px wide or less, the background color is blue */
+        @media screen and (max-width: 992px) {
+            body {
+                background-color: blue;
+                color: white;
+            }
+        }
+
+        /* On screens that are 600px wide or less, the background color is olive */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: olive;
+                color: white;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Resize the browser window to see the effect!</h1>
+        <p>By default, the background color of the document is "tan". If the screen size is 992px or less, the color
+            will change to "blue". If it is 600px or less, it will change to "olive".</p>
+
+        <h1>Ways to make your cat happy</h1>
+        <p>
+            You have a <span>mini-lion</span> at yourhome and you want to make it as
+            happy as possible
+        </p>
+        <hr />
+        <h2>Feed your cat well.</h2>
+        <p>
+            The right diet is <span>extremely</span>important for the well being of
+            your cat.<br />
+            Obesity is a common source of problems among domesticated animal
+        </p>
+        <p>
+            <strong>Keep your cat healthy.</strong>Felinnes can cathc a
+            <em>variety of illnesses</em> outside and inside the house.It is
+            important to bring yoour cat to the veterinarian at least
+            <strike>One</strike> two times a year for a check-up
+        </p>
+        <blockquote>
+            Your cat should be neuteured to prevent unwaned babies and lower the
+            risks of feline HIV
+        </blockquote>
+        <pre>This is a preformatted text which is a block type element</pre>
+        <p>
+            While this lline has a <code>Code Tag</code> in it,codes that can be
+            embedded inline.
+        </p>
+    </div>
+    <div>
+        <img src="https://images.unsplash.com/photo-1593642702909-dec73df255d7?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            width="245" height="226" alt="freecodecamp" usemap="#codecamp" />
+        <map name="codecamp">
+            <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="sun" />
+        </map>
+    </div>
+    <div>
+        <ol>
+            <li>January</li>
+            <li>february</li>
+            <li>March</li>
+        </ol>
+        <ul>
+            <li>Tomato</li>
+            <li>lettuce</li>
+            <li>Cheese</li>
+        </ul>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>White cold drink</dd>
+        </dl>
+    </div>
+    <form action="action_page.php" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            First Name:</br>
+            <input type="text" name="firstname" value="Mickey" placeholder="First Name"></br>
+            <input type="text" name="lastname" value="Simpson" placeholder="Last Name"></br>
+            Favourite car brand:<br>
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">audi</option>
+            </select>
+            <textarea name="description">label</textarea>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: beige;">
+            <col style="background-color: rgb(171, 223, 27);">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+        </tr>
+        <tr>
+            <td>5869207</td>
+            <td>My first css</td>
+            <td>$49</td>
+        </tr>
+    </table>
+</body>
+
+</html>

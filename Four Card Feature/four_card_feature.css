@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:Flex;
+    flex-direction:column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px;
+    color:hsl(229,6%,66%);
+    background-color: hsl(0,0%,98%);
+}
+#intro{
+    text-align:center;
+    height:25vh;
+    padding:25px;
+}
+#title_one{
+font-size: 40px;
+font-weight: 100;
+margin-bottom: 25px;
+color:hsl(229,6%,66%);
+letter-spacing:1px;
+}
+#title_two{
+font-size: 40px;
+font-weight: 600;
+margin-bottom: 30px;
+color:hsl(234, 12%, 34%);
+
+}
+#text{
+    width:400px;
+    margin:auto;
+}
+#main{
+    height:60vh;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:20px;
+    align-items:center;
+    justify-items: center;
+    padding:0 350px 0 250px;
+    margin-bottom: 20px;
+}
+#karma{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-top: 4px solid hsl(34,97%,64%);
+}
+.card{
+    height:150px;
+    width:250px;
+    padding:40px;
+    margin:0;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:rgb(253, 253, 253);
+    border-radius: 5px;
+    box-shadow: 3px 5px 9px -1px hsl(229,6%,66%) ;
+    
+}
+.card > .img_{
+    display:flex;
+    justify-content:flex-end;
+}
+#supervisor,#calc{
+    grid-row: span 2;
+}
+#supervisor{
+    border-top: 4px solid hsl(180,62%,55%);
+}
+#calc{
+    border-top: 4px solid hsl(212,86%,64%);
+}
+.card h3{
+    color:hsl(234, 12%, 34%);
+    font-weight: 400;
+    font-size:25px;
+}
+#Team_Builder{
+    border-top:4px solid hsl(0,78%,62%);
+    
+}
+@media screen and (max-width:900px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+        padding:0;
+        height:max-content;
+        align-self: center;
+        align-items: center;
+        margin-bottom: 100px;
+        margin-top:2em;
+    }
+    .card{
+        width:90%;
+        height:70%;
+    }
+}

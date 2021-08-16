@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  box-sizing: content-box;
+}
+body {
+  width: 100vw;
+  font-family: poppins, open-sans, "Segoe UI", sans-serif;
+}
+#upper {
+  background: url("images/bg-hero-desktop.svg");
+  background-position: contain;
+  background-repeat: repeat;
+  background-color: #92f0f013;
+  height: 100vh;
+}
+header {
+  display: flex;
+  padding: 20px;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+}
+#logo1 {
+  transform: scale(0.8);
+}
+button {
+  font-family: poppins, "Segoe UI", sans-serif;
+}
+header > button {
+  border-radius: 20px;
+  border: none;
+  width: 180px;
+  background-color: white;
+  box-shadow: 2px 1px 5px 2px rgb(223, 221, 221);
+}
+header > button:hover {
+  cursor: pointer;
+}
+#top_section {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 2rem;
+}
+#mockup_img {
+  transform: scale(0.6);
+}
+#intro h1 {
+  margin-bottom: 30px;
+}
+#intro p {
+  margin-bottom: 20px;
+}
+#intro button {
+  width: 60%;
+  height: 3rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+#intro button:hover {
+  cursor: pointer;
+}
+#middle_section {
+  width: 90%;
+  margin: auto;
+  padding: 5rem 0;
+}
+.mini_section {
+  height: 25rem;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 2px 1px 5px 2px rgb(223, 221, 221);
+  margin-bottom: 50px;
+}
+.mid_word {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 35%;
+  height: 50%;
+  margin-left: 0;
+}
+.mid_word:nth-child(2) {
+  margin-right: 0;
+}
+.mid_word h2 {
+  margin-bottom: 20px;
+}
+.mid_word p {
+  color: hsl(208, 11%, 55%);
+}
+#floating_section {
+  width: 35vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px -1px 5px 2px rgb(223, 221, 221);
+}
+#floating_section p {
+  font-size: 1.4em;
+  margin-bottom: 25px;
+}
+#floating_section button {
+  width: 50%;
+  height: 3.3rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 1px 5px 2px rgb(223, 221, 221);
+}
+#floating_section button:hover {
+  cursor: pointer;
+}
+footer {
+  margin: auto;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  margin-top: -70px;
+  padding: 150px 10px 10px 10px;
+  position: relative;
+  z-index: -1;
+  width: 98vw;
+}
+#footer_logo {
+  filter: invert(20%);
+  margin-left: 30px;
+}
+#main_footer {
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+#more_info {
+  flex-direction: column;
+  width: 30%;
+}
+.more_info_list {
+  display: flex;
+  margin-bottom: 20px;
+}
+.icon_ {
+  margin-right: 15px;
+  align-self: flex-start;
+}
+#further_reads {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  margin-right: 20px;
+  height: 100px;
+  width: 30%;
+}
+#further_reads li a {
+  text-decoration: none;
+  color: inherit;
+}
+#further_reads li:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+#links {
+  display: flex;
+}
+#links .icon {
+  display: flex;
+}
+
+#links .icon a {
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+  color: inherit;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#copyright {
+  text-align: right;
+  margin-right: 35px;
+}

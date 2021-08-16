@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  height: 100%;
+  margin: 0;
+  background-image: url("./images/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+}
+body {
+  display: flex;
+  color: white;
+  font-weight: 400;
+  font-family: "Poppins","Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#intro {
+  margin-left: 3rem;
+}
+.logo {
+  margin-top: 1rem;
+}
+.main {
+  margin-top: 3rem;
+}
+h1 {
+  font-weight: 600;
+  font-size: 45px;
+  margin-top:2rem;
+  width: 80%;
+}
+p {
+  font-size: 20px;
+  margin-top:2rem;
+  width: 90%;
+}
+button {
+  width: 200px;
+  height: 50px;
+  margin-top:2rem;
+  border-radius: 30px;
+  background-color: #fff;
+  border: none;
+  font-family: inherit;
+  color: hsl(257, 40%, 49%);
+  font-size: 20px;
+  box-shadow: 7px 5px 9px -1px rgb(65, 64, 64);
+}
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  cursor: pointer;
+}
+#outro {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  justify-content: center;
+}
+#icons{
+  margin-top:30%;
+  display:flex;
+  justify-content: flex-end;
+}
+.icon{
+  margin-right: 20px;
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  transform: scale(1.1);
+  border:1px solid white;
+;
+}
+.icon:hover{
+  color:hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    height: 100%;
+    margin: 0;
+    background-image: url("./images/bg-mobile.svg");
+    background-color: hsl(257, 40%, 49%);
+  }
+  body {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+  .intro {
+    margin-left: 0;
+    
+  }
+  #outro {
+    padding:0;
+    width: 100%;
+  }
+  h1 {
+    width: 70%;
+    margin:auto;
+    text-align:center;
+    margin-bottom: 2rem;
+  }
+  p {
+    width: 70%;
+    margin:auto;
+    text-align:center;
+    margin-bottom: 3rem;
+  }
+  button {
+    width: 400px;
+    margin:Auto;
+  }
+  #icons{
+    margin-top:50px;
+    justify-content: center;
+  }
+}

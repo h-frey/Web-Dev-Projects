@@ -1,0 +1,108 @@
+/*::before -inserts some content before the given elemnt*/
+
+*,/* * is a wildcard that means apply the properties under it to all the elemnts in the native browser*/
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before { /* this adds the given attributes before the body*/
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-image: url("./Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-color: black;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  margin: 10px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h1 {
+  color: rgba(66, 172, 140, 0.87);
+  font-family: Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+header p {
+  color: aliceblue;
+  font-family: Geneva, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+form {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 70%;
+  border: 1px solid rgba(66, 172, 140, 0.87);
+  border-radius: 5px;
+  padding: 15px 15px 50px;
+  background: rgb(0, 0, 0, 0.6);
+  z-index: 2;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[name="name"],
+input[name="email"],
+input[name="age"],
+input[name="op"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0 30px;
+  display: inline-block;
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+textarea {
+  resize: none;
+  height: 100px;
+}
+button {
+  width: 100%;
+  background-color: rgba(66, 172, 140, 0.87);
+  color: white;
+  padding: 14px 20px;
+  margin: auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+button:hover {
+  background-color: rgb(223, 82, 17);
+  color: black;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
