@@ -1,31 +1,167 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    height:100vh;
-    width:100vw;
-}
-#profile_pic{
-   height:50px;
-   width:50px;
-}
-.dog_img{
-    width:80px;
-    height:80px;
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#main{
-    width:80vw;
-    margin:auto;
-    display: flex;
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+  width: 90%;
 }
-#phone_sect{
-    outline:auto;    
-    }
-#head{
-    outline:Auto;
-    display:flex;
-    justify-content: start;
+#profile_pic {
+  height: 45px;
+  width: 45px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#profile_info {
+  color: white;
+}
+#profile_info p:nth-child(1) {
+  font-weight: bold;
+  font-size: 21px;
+}
+#profile_info p:nth-child(2){
+    color: hsl(276, 100%, 81%);
+}
+.dog_img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.dog_img:nth-child(3) {
+  margin-right: 0;
+}
+#main {
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  margin-top: 5%;
+}
+
+#phone_sect {
+  position: relative;
+  background-color: hsla(270, 20%, 96%);
+  box-shadow: 2px 1px 20px 10px hsl(270, 7%, 64%);
+  width: 46%;
+  height: max-content;
+  border: 13px solid white;
+  border-radius: 50px;
+  display: flex;
+  font-size: 1.8ex;
+  flex-direction: column;
+}
+
+.notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250px;
+  height: 36px;
+  background-color: white;
+  border-radius: 0 0 28px 28px;
+  transform: translateX(-50%);
+}
+#head {
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  display: flex;
+  justify-content: start;
+  margin-bottom: 0.5rem;
+  padding: 3em 0.2em 1.5em 2.5em;
+  border-radius: 40px 40px 5px 5px;
+}
+#chat_section {
+  padding: 0 0.5rem;
+}
+.recepient {
+  margin-bottom: 0.5rem;
+  width: 58%;
+}
+#recepient_one,
+#recepient_two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.recepient p {
+  padding: 7px;
+  color: hsl(276, 55%, 52%);
+  background-color: hsla(279, 24%, 81%, 0.856);
+  border-radius: 15px 20px 20px 5px;
+}
+#dog_sect {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+#sender_one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: white;
+  box-shadow: 1px 1px 5px 0.2px hsl(273, 9%, 77%);
+  color: hsl(271, 15%, 43%);
+  padding: 10px;
+  border-radius: 20px 20px 5px 20px;
+  margin-bottom: 0.5rem;
+  width: 35%;
+}
+.sender:nth-of-type(2) {
+  width: 60%;
+}
+.price {
+  height: 3.6rem;
+  width: 80%;
+  padding: 1em;
+  display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  color: white;
+  border-radius: 15px 20px 20px 5px;
+  box-shadow: 1px 1px 5px 0.2px hsl(273, 9%, 77%);
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+}
+.price:nth-of-type(3) {
+  margin-bottom: 1.5rem;
+}
+#amount {
+  font-weight: bold;
+  font-size: 21px;
+}
+#type_text {
+  width: 100%;
+  box-shadow: 1px 1px 5px 0.2px hsl(273, 9%, 77%);
+  height: 3rem;
+  display: flex;
+  background-color: white;
+  color: hsl(206, 6%, 79%);
+  border-radius: 40px;
+  margin-bottom: 1.5em;
+  padding: 0.8rem;
 }
