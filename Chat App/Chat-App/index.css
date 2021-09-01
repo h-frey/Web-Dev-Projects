@@ -266,13 +266,14 @@ aside p {
 }
 #purple {
   width: 550px;
-  height: 790px;
+  height: 800px;
   transform: translate(200%, 4%) rotate(180deg);
   background: linear-gradient(
     45deg,
     hsl(264, 100%, 61%),
     hsl(293, 100%, 63%)
   );
+  filter: opacity(0.8);
   border-radius: 0 0 100% 100%;
 }
 

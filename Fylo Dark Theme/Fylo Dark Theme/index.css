@@ -35,7 +35,7 @@ header > ul > li > a:hover {
   font-weight: bold;
 }
 #first_section {
-  width: 99vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,7 +122,6 @@ header > ul > li > a:hover {
   color: inherit;
   border-bottom: 1px solid beige;
 }
-
 #commentary {
   margin: auto;
   width: 90vw;
@@ -268,7 +267,7 @@ footer {
 #socials a:hover {
   color: hsl(176, 68%, 64%);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1025px) {
   header > ul > li > a {
     margin-right: 4.5em;
   }
@@ -280,6 +279,7 @@ footer {
     background-size: contain;
     background-position: bottom;
     background-color: hsl(219, 30%, 18%);
+    width:100%;
   }
   #first_section img {
     transform: scale(0.7);
@@ -311,7 +311,7 @@ footer {
   }
   #productive_sect a:hover {
     color: inherit;
-    border-bottom:none;
+    border-bottom: none;
   }
   #commentary {
     flex-direction: column;
@@ -363,5 +363,34 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #logo {
+    height: 30px;
+  }
+  header > ul > li > a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 10px;
+  }
+  #first_section img {
+    transform: scale(0.45);
+  }
+  #first_section {
+    width: 100%;
+  }
+  .mid_sect_part {
+    width: 17rem;
+  }
+  .mid_sect_part p {
+    width: 150%;
+    text-align: left;
+    margin-top: -9rem;
+  }
+  .mid_sect_part h3 {
+    width: 130%;
+    margin-top: -9rem;
   }
 }
