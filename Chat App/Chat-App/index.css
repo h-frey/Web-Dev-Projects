@@ -6,6 +6,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  position:fixed;
   font-family: -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -70,7 +71,7 @@ aside p {
   position: relative;
   background-color: hsla(270, 20%, 96%);
   box-shadow: 2px 1px 20px 10px hsl(270, 7%, 64%);
-  width: 50%;
+  width: 60%;
   height: max-content;
   border: 13px solid hsl(0, 0%, 100%);
   border-radius: 50px;
@@ -263,7 +264,7 @@ aside p {
 #purple {
   width: 550px;
   height: 800px;
-  transform: translate(200%, 4%) rotate(180deg) scale(0.95);
+  transform: translate(207%, 19%) rotate(180deg) scale(0.95);
   background: linear-gradient(
     45deg,
     hsl(264, 100%, 61%),
@@ -272,7 +273,10 @@ aside p {
   filter: opacity(0.8);
   border-radius: 0 0 100% 100%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  body{
+    position: relative;
+  }
   #main{
     flex-direction: column;
     width:99%;
@@ -299,6 +303,9 @@ aside p {
   }
 }
 @media screen and (max-width: 400px) {
+  body{
+    position: relative;
+  }
   #main{
     flex-direction: column;
     width:99%;
@@ -307,7 +314,7 @@ aside p {
   }
 
   #phone_sect{
-    width:60%;
+    
   }
   aside{
     align-items: center;
@@ -325,3 +332,5 @@ aside p {
     display:none;
   }
 }
+/*TODO- Work on the responsiveness of the site and 
+/*TODO- Read some code from an experienced person on this 
