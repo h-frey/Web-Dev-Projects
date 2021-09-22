@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+button:hover{
+    cursor: pointer;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    padding: 1.5rem 0.5rem 2.5rem;
+    width:95vw;
+}
+header > img{
+    transform: scale(0.75);
+}
+header > button{
+    border: 1px solid pink;
+    color:pink;
+    border-radius:20px;
+    width:5rem;
+    height:2rem;
+    background-color:unset;
+}
+#intro{
+    width:95vw;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin:auto;
+}
+#intro p{
+    width:40%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+#intro>button{
+    width:19%;
+    padding:0.8rem;
+    color:white;
+    background-color: pink;
+    border-radius:30px;
+    border:none;
+    margin: auto;
+    margin-top: 1.5rem;
+    box-shadow: 2px 1px 5px 2px rgb(223, 221, 221);
+}
+#intro img{
+    transform: scale(0.6);
+}

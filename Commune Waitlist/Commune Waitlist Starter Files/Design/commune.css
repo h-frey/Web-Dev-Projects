@@ -94,13 +94,37 @@ main img{
     flex-direction: column;
 }
 footer{
+    margin-top:0.5rem;
     margin-left: 3.5rem;
 }
 footer ul{
     list-style-type: none;
     display: flex;
-    margin-top:20px;
+   margin-top: 0.5rem;
 }
 footer ul li{
     margin-right: 15px;
+}
+@media screen and (max-width: 1200px){
+    main{
+        margin:auto;
+        width:80%;
+        flex-direction: column;
+        justify-content:center;
+        padding:unset;
+        text-align: center;
+    }
+    main img{
+        display:none;
+    }
+    #early-access,form{
+        width:100%;
+    }
+    header ul{
+        overflow:hidden;
+        position:relative;
+    }
+    header ul li a{
+        display:none;
+    }
 }
